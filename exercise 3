@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class UserNames
+{
+
+	public static void main(String[] args) 
+	{
+		String firstName;
+		String lastName;
+		String finalName;
+		
+		Scanner now = new Scanner (System.in);
+		Random dom = new Random();
+		
+		
+		System.out.print("Enter first name: ");
+		firstName= now.next();
+		System.out.print("Enter Last name: ");
+		lastName= now.next();
+		
+		
+		finalName = lastName.substring(0,5);
+		finalName += firstName.substring(0,1);
+		finalName += dom.nextInt(99) + 10;
+		
+		System.out.println(finalName);
+	}
+
+}

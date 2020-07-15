@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class AgeGuess 
+{
+
+	public static void main(String[] args) 
+	{
+		int ageGuess;
+		ageGuess = (int) 24; 
+		String name;
+		
+		System.out.println("Can you guess my age from 0 - 100?");
+		
+		Scanner key = new Scanner(System.in); 
+		int guess;
+		
+		System.out.print("Enter guess: ");
+		guess = key.nextInt(); 
+
+		if (guess == ageGuess) 
+			System.out.println("Your guess is correct.");
+		else if (guess < ageGuess)
+			System.out.println("I am older!");
+		else if (guess > ageGuess)
+			System.out.println("I'm younger!");
+		
+
+	}
+}

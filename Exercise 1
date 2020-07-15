@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class AgeGuess 
+{
+
+	public static void main(String[] args) 
+	{
+		int ageGuess;
+		ageGuess = (int) 24; 
+		String name;
+		
+		System.out.println("Can you guess my age from 0 - 100?");
+		
+		Random ages = new Random();
+		int age;
+		Scanner key = new Scanner(System.in); 
+		int guess;
+		
+		System.out.print("Enter guess: ");
+		guess = key.nextInt(); 
+
+		age=ages.nextInt(101) + 10;
+				ageGuess = age;
+		System.out.println("Your guess is " + guess);
+		System.out.println("My age is " + age);
+		
+
+	}
+}

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class DistCalc 
+{
+
+	public static void main(String[] args) 
+	{
+		int x1, x2, y1, y2; //
+		int distance;
+				
+		Scanner keys = new Scanner (System.in);
+		
+		//enter points (x1,y1)
+		x1 = keys.nextInt();
+		y1 = keys.nextInt();
+		//enter points (x2,y2)
+		x2 = keys.nextInt();
+		y2 = keys.nextInt();
+		
+		
+		
+		distance=(int)Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2));
+		
+		System.out.println("Distance = " +distance);
+
+	}
+}
